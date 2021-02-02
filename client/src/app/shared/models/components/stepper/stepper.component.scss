@@ -1,0 +1,18 @@
+button.nav-link {
+  background: #e9ecef;
+  border-radius: 0;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+  &.actice:hover {
+    color: white;
+  }
+  & :active {
+    outline: none;
+  }
+  &.actice:focus{
+    outline: none;
+  }
+}
