@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {PaginationModule} from 'ngx-bootstrap/pagination';
-import { PagingHeaderComponent } from './models/components/paging-header/paging-header.component';
-import { PagerComponent } from './models/components/pager/pager.component';
+import { PagingHeaderComponent } from './components/paging-header/paging-header.component';
+import { PagerComponent } from './components/pager/pager.component';
 import {CarouselModule} from 'ngx-bootstrap/carousel';
-import { OrderTotalsComponent } from './models/components/order-totals/order-totals.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import { OrderTotalsComponent } from './components/order-totals/order-totals.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
-import { TextInputComponent } from './models/components/text-input/text-input.component';
+import { TextInputComponent } from './components/text-input/text-input.component';
 import {CdkStepperModule} from '@angular/cdk/stepper';
-import { StepperComponent } from './models/components/stepper/stepper.component';
-import { BasketSummaryComponent } from './models/components/basket-summary/basket-summary.component';
+import { StepperComponent } from './components/stepper/stepper.component';
+import { BasketSummaryComponent } from './components/basket-summary/basket-summary.component';
 import {RouterModule} from '@angular/router';
 
 
@@ -28,6 +28,7 @@ import {RouterModule} from '@angular/router';
     PaginationModule.forRoot(),
     CarouselModule.forRoot(),
     ReactiveFormsModule,
+    FormsModule,
     BsDropdownModule.forRoot(),
     CdkStepperModule,
     RouterModule
@@ -43,7 +44,8 @@ import {RouterModule} from '@angular/router';
     TextInputComponent,
     CdkStepperModule,
     StepperComponent,
-    BasketSummaryComponent
+    BasketSummaryComponent,
+    FormsModule
   ]
 })
 export class SharedModule { }

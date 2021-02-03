@@ -1,8 +1,8 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {BasketService} from '../../../../basket/basket.service';
+import {BasketService} from '../../../basket/basket.service';
 import {Observable} from 'rxjs';
-import {IBasket, IBasketItem} from '../../basket';
-import {IOrderItem} from '../../order';
+import {IBasket, IBasketItem} from '../../models/basket';
+import {IOrderItem} from '../../models/order';
 
 @Component({
   selector: 'app-basket-summary',

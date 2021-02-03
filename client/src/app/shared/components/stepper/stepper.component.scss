@@ -15,4 +15,7 @@ button.nav-link {
   &.actice:focus{
     outline: none;
   }
+  &:disabled:not(.active) {
+    color: #333;
+  }
 }
